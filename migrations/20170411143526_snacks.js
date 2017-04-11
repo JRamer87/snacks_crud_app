@@ -15,7 +15,7 @@ exports.up = function(knex, Promise) {
             .defaultTo('');
         table.decimal('rating', 8, 1)
             .notNullable()
-            .defaultTo('0');
+            .defaultTo(0);
     });
 
 };

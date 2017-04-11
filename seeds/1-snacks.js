@@ -18,7 +18,7 @@ exports.seed = function(knex, Promise) {
                         name: 'Nutter Butter',
                         image_url: 'https://i5.walmartimages.com/asr/02485090-1082-4ebf-9085-d3c5502368b1_1.ee7025bea3d1ac0d918d9bda797500f0.jpeg',
                         review_description: 'So stinking nutty',
-                        rating: 7.0
+                        rating: 7
                     },
                     {
                         id: 3,

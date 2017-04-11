@@ -23,6 +23,9 @@ app.use(methodOverride("_method"));
 
 // app.use('/snacks', snacksRouter);
 
+app.get('/', (req, res) => {
+    res.render('statics/home');
+})
 
 
 
