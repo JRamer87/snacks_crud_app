@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="/index.css">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Snack Reviews</h1>
+
+  <% snacks.forEach((snack) => { %>
+    <div class="snacks">
+      <div class="imageContainer">
+          <ul><img src="<%= snack.image_url %>" alt="image of a snack"></ul>
+      </div>
+      <div class="info">
+        <div class="snackProperty">
+          <ul><%= snack.name %></ul>
+        </div>
+        <div class="snackProperty">
+          <ul>Review: <%= snack.review_description %></ul>
+        </div>
+        <div class="snackProperty">
+          <ul>Rating: <%= snack.rating %></ul>
+        </div>
+        <div class="links">
+          <ul><a href="/snacks/<%= snacks %>/edit<% snack.id %>">Edit</a></ul>
+          <ul><a href="/snacks/delete<% snack.id %>">Delete</a></ul>
+        </div>
+      </div>
+    </div>
+
+  <% }) %>
+
+
+</body>
+</html>

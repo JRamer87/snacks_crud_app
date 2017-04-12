@@ -12,6 +12,8 @@ const PORT = process.env.PORT || 3000;
 
 app.set('view engine', 'ejs');
 
+app.use(express.static(__dirname + "/public"));
+
 app.use(morgan('tiny'));
 
 app.use(bodyParser.urlencoded({
@@ -21,7 +23,7 @@ app.use(bodyParser.json());
 
 app.use(methodOverride("_method"));
 
-// app.use('/snacks', snacksRouter);
+app.use('/snacks', snacksRouter);
 
 app.get('/', (req, res) => {
     res.render('statics/home');
@@ -35,4 +37,4 @@ app.listen(PORT, () => {
 
 
 
-module.exports = app;
+module.exports = app;;

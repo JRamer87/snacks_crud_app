@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Edit Snack</title>
+</head>
+<body>
+  <h1>Edit a Snack</h1>
+  <form action="/snacks/<%=snack.id%>?_method=PUT" method="POST">
+    <!-- <label for="name">Id:</label>
+    <input type="text" name="snack[id]"><br><br> -->
+    <label for="name">Name:</label>
+    <input type="text" value="<%= snack.name%>" name="snack[name]"><br><br>
+    <label for="image_url">Image URL:</label>
+    <input type="text" value="<%=snack.image_url%>" name="snack[image_url]"><br><br>
+    <label for="review_description">Review Description:</label>
+    <input type="text" value="<%=snack.review_description%>"name="snack[review_description]"><br><br>
+    <label for="rating">Rating:</label>
+    <input type="text" value="<%=snack.rating%>"name="snack[rating]"><br><br>
+    <input type="submit" value="Edit Snack">
+
+  </form>
+</body>
+</html>

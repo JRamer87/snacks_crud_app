@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>New Snack</title>
+</head>
+<body>
+  <h1>Create a New Snack</h1>
+  <form action="/snacks" method="post">
+    <label for="name">Name:</label>
+    <input type="text" name="snack[name]"><br><br>
+    <label for="image_url">Image URL:</label>
+    <input type="text" name="snack[image_url]"><br><br>
+    <label for="review_description">Review Description:</label>
+    <input type="text" name="snack[review_description]"><br><br>
+    <label for="rating">Rating:</label>
+    <input type="text" name="snack[rating]"><br><br>
+    <input type="submit" value="Create Snack">
+
+  </form>
+</body>
+</html>
