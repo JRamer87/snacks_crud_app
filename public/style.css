@@ -1,0 +1,15 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    height: 10vh;
+    width: 10vh;
+}
+
+
+/*ul {
+    height: auto;
+    width: 100vh;
+}*/
