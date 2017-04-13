@@ -12,7 +12,7 @@ module.exports = {
         connection: 'postgres://localhost/snacks_crud_test'
     },
     production: {
-        client: 'postgresql',
+        client: 'pg',
         connection: process.env.DATABSE_URL,
     }
 };
